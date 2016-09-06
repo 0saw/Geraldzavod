@@ -4,3 +4,5 @@ node_modules
 
 !dist/static/
 !dist/static/.gitkeep
+*.sublime-workspace
+*.sublime-project
