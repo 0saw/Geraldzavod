@@ -8,7 +8,7 @@ $(function () {
   sliders();
   forms();
 
-  $('a:not(.benefits__item, .gallery-item) img').parent().addClass('img');
+  $('a:not(.benefits__item, .gallery-item, .front-slick__link) img').parent().addClass('img');
 
   $('.gallery').each(function () {
     $(this).magnificPopup({
