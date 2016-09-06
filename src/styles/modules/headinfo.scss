@@ -1,0 +1,88 @@
+.headinfo {
+  .wrapper {
+    padding: 2rem 5rem 0;
+    font-size: 1.2rem;
+  }
+  &__col {
+    width: 65%;
+    float: left;
+    &:last-child {
+      width: 35%;
+      text-align: right;
+    }
+  }
+  @media screen and (max-width: 40rem) {
+    &__col, &__col:last-child {
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+    & .wrapper {
+      padding: 1rem 0.4rem 0;
+    }
+  }
+  @media screen and (max-width: 30rem) {
+    i {
+      display: none;
+    }
+    span {
+      margin: 0 0.4rem;
+    }
+  }
+  span {
+    white-space: nowrap;
+  }
+  strong {
+    font-weight: normal;
+  }
+  i {
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: $mColor;
+  }
+  a {
+    font-weight: bold;
+    text-decoration: none;
+    color: $mColor;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0.3rem;
+    margin-bottom: -0.3rem;
+    transition: color 0.3s ease-out;
+    transition-timing-function: $mTrans;
+    &:before {
+      content: '';
+      background-color: $mColor;
+      height: 0.1rem;
+      position: absolute;
+      bottom: 0;
+      opacity: 0.001;
+      width: 100%;
+      transition: 0.3s ease-out;
+      transition-property: transform, opacity;
+      transition-timing-function: $mTrans;
+    }
+    &:hover {
+      color: lighten($mColor, 10);
+      transition-duration: 0.1s;
+      transition-timing-function: $mTransOut;
+      &:before {
+        background-color: lighten($mColor, 10);
+        opacity: 1;
+        transform: translate3d(0, -0.2rem, 0);
+        transition-duration: 0.1s;
+        transition-timing-function: $mTransOut;
+      }
+    }
+    &:active {
+      color: darken($mColor, 10);
+      transition-timing-function: $mTransOut;
+      &:before {
+        background-color: darken($mColor, 10);
+        transition-duration: 0.1s;
+        transition-timing-function: $mTransOut;
+      }
+    }
+  }
+}

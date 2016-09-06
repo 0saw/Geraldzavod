@@ -1,0 +1,38 @@
+<div class="form">
+  <form>
+    <header>
+        <div class="h1">Оставить заявку на расчет</div>
+    </header>
+    <div class="form__row cf">
+        <div class="form__field">
+            <span>
+                <input id="name-field" name="name" type="text" />
+            </span>
+            <label for="name-field">Ваше имя</label>
+        </div>
+        <div class="form__field">
+            <span>
+                <input id="phone-field" name="phone" type="text" />
+            </span>
+            <label for="phone-field">Номер телефона</label>
+        </div>
+        <div class="form__field">
+            <span>
+                <input name="message" id="message-field" type="text" />
+            </span>
+            <label for="message-field">Примечание</label>
+        </div>
+    </div>
+    <div class="form__right">
+        <a href="#" class="button">Отставить заявку</a>
+        <input type="submit" value="Отправить">
+        <img class="ajax-loader" src="http://www.health-spa.ru/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Отправка..." style="visibility: hidden;">
+    </div>
+    <div class="wpcf7-response-output wpcf7-display-none wpcf7-validation-errors" style="display: none;" role="alert">
+        Одно или несколько полей содержат ошибочные данные. Пожалуйста проверьте их и попробуйте ещё раз.
+    </div>
+    <div class="wpcf7-good" style="display: none;" role="alert">
+        Ваше сообщение успешно отправлено.
+    </div>
+  </form>
+</div>

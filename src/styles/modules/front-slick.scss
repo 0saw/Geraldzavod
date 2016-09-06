@@ -1,0 +1,96 @@
+.front-slick {
+  padding: 0 30px;
+  overflow: hidden;
+  .slick-slide {
+    padding: 0 4px;
+    text-align: center;
+    * {
+      outline: none;
+    }
+  }
+  img {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-out;
+    transition-timing-function: $mTrans;
+  }
+  a {
+    text-decoration: none;
+    color: $mColor;
+  }
+  &__title {
+    position: absolute;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0.001;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0 0;
+    transform: translate3d(0, -1rem, 0);
+    transition: 0.3s ease-out;
+    transition-property: transform, opacity;
+    transition-timing-function: $mTrans;
+    &:before {
+      content: ' ';
+      position: absolute;
+      bottom: -10px;
+      height: 8px;
+      width: 8px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      background: url("../images/arrow-down.png") center center no-repeat;
+    }
+  }
+  &__link {
+    position: relative;
+    padding-top: 5rem;
+    display: block;
+    opacity: 0.7;
+    transition: 0.3s ease-out;
+    transition-timing-function: $mTransOut;
+    .slick-active &:hover {
+      &, .front-slick__title, img {
+        opacity: 1;
+        transition-timing-function: $mTransOut;
+      }
+      .front-slick__title {
+        transform: translate3d(0, 0, 0);
+      }
+      img {
+        transform: translate3d(0, -10px, 0);
+      }
+    }
+  }
+  .slick-next, .slick-prev {
+    position: absolute;
+    top: 60%;
+    margin-top: -41px;
+    width: 24px;
+    height: 83px;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    border: 0;
+    text-shadow: none;
+    z-index: 10;
+  }
+  .slick-next {
+    right: 4px;
+    background: url("../images/controls.png") -26px 0 no-repeat;
+    &:hover {
+      transform: translate3d(4px, 0, 0);
+      background-position: -77px 0;
+    }
+  }
+  .slick-prev {
+    left: 4px;
+    background: url("../images/controls.png") 0 0 no-repeat;
+    &:hover {
+      transform: translate3d(-4px, 0, 0);
+      background-position: -51px 0;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Geraldzavod</title>
+
+  <!-- @if ENV='dev' -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- @endif -->
+  <!-- @if ENV='prod' -->
+  <link rel="stylesheet" href="styles/main.min.css">
+  <!-- @endif -->
+  <!-- @include inc/_favicons.html -->
+</head>
+<body>
+  <!-- @include inc/pushy.html -->
+
+  <div class="viewport" id="container">
+    <div class="site-content">
+      <!-- @include inc/_browserhappy.html -->
+      <!-- @include inc/header.html --> 
+
+      <main class="content">
+        <div class="wrapper">
+          <div class="content__container">
+            <div class="content__col content__col_single">
+              <header>
+                <h1>О компании</h1>
+              </header>
+            </div>
+          </div>
+          <div class="content__container">
+            <div class="content__col">
+              <div class="content__subheader">Подзаголовок 1</div>
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam odit consequuntur, quasi, quisquam dignissimos quod, odio reiciendis explicabo aut consectetur officia minima deleniti velit nisi blanditiis. Itaque vitae, animi assumenda.</div>
+              <div>Quibusdam tempore velit minus unde officia reprehenderit possimus accusamus qui blanditiis, quo. Laborum recusandae odit quidem nam, iste, nobis officia. Sunt nemo illo deleniti, cupiditate, dolore quod possimus voluptas. Labore.</div>
+              <div>Voluptate harum tempora architecto laboriosam quo, maiores deserunt quas, saepe velit eius quam ducimus accusantium repellendus porro quod repellat incidunt repudiandae maxime asperiores provident. Quia neque pariatur ab at laborum!</div>
+            </div>
+            <div class="content__col">
+              <img class="content--rounded" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=%D0%A4%D0%BE%D1%82%D0%BE&w=350&h=350" alt="">
+            </div>
+          </div>
+          <div class="content__container content__container_border">
+            <div class="content__col">
+              <div class="content__subheader">Подзаголовок 2</div>
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem eligendi voluptatem laudantium eaque culpa, tempora assumenda, quos dolor, eius molestias alias voluptates! Consectetur itaque esse tempora minus ullam sit.</div>
+              <div>Sit aspernatur mollitia commodi omnis magnam aperiam, ab explicabo odit et perspiciatis cupiditate harum architecto, in, iusto delectus, expedita nesciunt molestias dolor! Praesentium quia impedit laboriosam unde, iure corporis? Aliquam.</div>
+            </div>
+            <div class="content__col">
+              <div class="content__subheader">Подзаголовок 3</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sed minus corporis vel quae, sequi molestiae perferendis ex eveniet laudantium sapiente, optio distinctio doloribus tempore itaque accusamus laboriosam tempora quibusdam.</p>
+              <p><a href="#">Ссылка</a></p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- @include inc/footer.html -->
+  </div>
+
+  <!-- @if ENV='dev' -->
+  <script src="scripts/vendor.js"></script>
+  <script src="scripts/main.js"></script>
+  <!-- @endif -->
+  <!-- @if ENV='prod' -->
+  <script src="scripts/vendor.min.js"></script>
+  <script src="scripts/main.min.js"></script>
+  <!-- @endif -->
+
+  <!-- //@include inc/_analytics.html -->
+</body>
+</html>

@@ -1,0 +1,16 @@
+.catalog-single {
+  &__container {
+    -js-display: flex;
+    display: flex;
+    align-items: center;
+  }
+  &__col {
+    padding: 1rem;
+    &:last-child {
+      flex-grow: 1;
+    }
+  }
+  &__button {
+    text-align: center;
+  }
+}

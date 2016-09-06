@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Geraldzavod</title>
+
+	<!-- @if ENV='dev' -->
+	<link rel="stylesheet" href="styles/main.css">
+	<!-- @endif -->
+	<!-- @if ENV='prod' -->
+	<link rel="stylesheet" href="styles/main.min.css">
+	<!-- @endif -->
+	<!-- @include inc/_favicons.html -->
+</head>
+<body>
+  <!-- @include inc/pushy.html -->
+
+  <div class="viewport" id="container">
+    <div class="site-content">
+      <!-- @include inc/_browserhappy.html -->
+      <!-- @include inc/header.html --> 
+
+      <div class="wrapper">
+        <!-- @include inc/front-slider.html --> 
+        <!-- @include inc/front-benefits.html --> 
+        <main class="main">
+          <div class="main__col">
+            <h1 class="main__title">Производство медалей и орденов</h1>
+            <p>Компания «Санкт-Петербургский Геральдический завод» предлагает большой ассортимент медалей, значков, монет и брелоков. Изготовление значков является нашим приоритетным направлением, и у нас вы сможете заказать подходящее изделие под любой праздничный повод.</p>
+            <p>Мы осуществляем бесплатную доставку по всей России. Поэтому, если вы живете не в Москве или СПб, не расстраивайтесь, вам не придется переплачивать за услуги курьера.</p>
+          </div>
+          <div class="main__col">
+            <div class="main__subtitle">Новость 2</div>
+            <p>
+              Компания «Санкт-Петербургский Геральдический завод» предлагает большой ассортимент медалей, значков, монет и брелоков. Изготовление значков является нашим приоритетным направлением, и у нас вы сможете..
+            </p>
+            <div class="main__readmore">
+              <a href="#">Читать далее...</a>
+            </div>
+          </div>
+        </main>
+        <!-- @include inc/front-slick.html --> 
+        
+        <div class="form--footer">
+          <!-- @include inc/_form.html -->
+        </div>
+      </div>
+
+      <!-- @include inc/footer.html -->
+    </div>
+  </div>
+
+  <!-- @if ENV='dev' -->
+  <script src="scripts/vendor.js"></script>
+  <script src="scripts/main.js"></script>
+  <!-- @endif -->
+  <!-- @if ENV='prod' -->
+	<script src="scripts/vendor.min.js"></script>
+	<script src="scripts/main.min.js"></script>
+	<!-- @endif -->
+
+	<!-- //@include inc/_analytics.html -->
+</body>
+</html>

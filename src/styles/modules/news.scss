@@ -1,0 +1,107 @@
+.news {
+  &__container {
+    -js-display: flex;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &__image {
+    display: block;
+    text-align: center;
+    img {
+      width: 220px;
+    }
+  }
+  &__text {
+    flex: 1;
+    padding-left: 1rem;
+  }
+  @media screen and (max-width: 40rem) {
+    &__image {
+      max-width: 35%;
+      flex: 1;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 30rem) {
+    &__image {
+      min-width: 100%;
+      max-width: 100%;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    &__text {
+      padding-left: 0;
+    }
+  }
+  &__item {
+    -js-display: flex;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px dotted #ccc;
+    border-top: 1px dotted #ccc;
+    &:first-child {
+      border-top-width: 0;
+    }
+    &:last-child {
+      border-bottom-width: 0;
+    }
+    &:nth-child(3n-1),
+    &:nth-child(3n) {
+      width: 50%;
+      padding: 2rem 0;
+      border-width: 0;
+    }
+    &:nth-child(3n-1) {
+      padding-right: 1rem;
+    }
+    &:nth-child(3n) {
+      border-left: 1px dotted #ccc;
+      padding-left: 1rem;
+    }
+    @media screen and (max-width: 60rem) {
+      padding: 2rem 1rem;
+      &:nth-child(3n-1),
+      &:nth-child(3n) {
+        padding: 2rem 1rem;
+        width: 100%;
+      }
+      &:nth-child(3n) {
+        border-top: 1px dotted #ccc;
+      }
+    }
+  }
+  &__header {
+    font-weight: 300;
+    a {
+      text-decoration: none;
+      color: $mColor;
+      font-size: 1.3rem;
+      transition: color 0.3s ease-out;
+      transition-timing-function: $mTrans;
+      &:hover {
+        color: lighten($mColor, 10);
+        transition-duration: 0.2s;
+        transition-timing-function: $mTransOut;
+      }
+    }
+  }
+  &__date {
+    color: #ccc;
+    line-height: 1.3rem;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+  &__button {
+    margin-top: 0.8rem;
+    text-align: right;
+  }
+  &__readmore {
+    margin-top: 1rem;
+  }
+}
