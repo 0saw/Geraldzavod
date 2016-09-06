@@ -119,36 +119,102 @@
 
       <main class="content">
         <div class="wrapper">
-          <div class="content__container">
-            <div class="content__col content__col_single">
-              <header>
-                <h1>О компании</h1>
-              </header>
+          <header class="content__header">
+            <h1>Контакты</h1>
+          </header>
+          <p>Офис продаж &#8212; 197342 г. Санкт-Петербург,<br />
+          ул. Белоостровская 20 оф. 11<br />
+          тeл./фaкc: 8 (812) 244-27-06 , 8 (800) 707-51-64<br />
+          E-mail: <a href="mailto:zakaz@geraldzavod.ru">zakaz@geraldzavod.ru</a><br />
+          Время работы: по будням с 9:00 до 18:00</p>
+          <p>Адрес производства: Санкт-Петербург, проспект Елизарова 34</p>
+          <div class="content__container contacts__container">
+            <div class="content__col3x">
+              <div class="content__center">
+                <img src="images/question-mark-button.png" alt="Задать вопрос, рассчитать стоимость, заказать – менеджер">
+              </div>
+              <p><a href="#">email@geraldzavod.ru</a></p>
+              <div>Задать вопрос, рассчитать стоимость, заказать – менеджер</div>
+            </div>
+            <div class="content__col3x">
+              <div class="content__center">
+                <img src="images/dart-arrow-in-the-middle-of-circular-board.png" alt="Партнерство, реклама, спонсорство - ком. директор">
+              </div>
+              <p><a href="#">email@geraldzavod.ru</a></p>
+              <div>Партнерство, реклама, спонсорство - ком. директор</div>
+            </div>
+            <div class="content__col3x">
+              <div class="content__center">
+                <img src="images/shopping-bag.png" alt="Карьера, логистика, закупка – помощник ген. Директора.">
+              </div>
+              <p><a href="#">email@geraldzavod.ru</a></p>
+              <div>Карьера, логистика, закупка – помощник ген. Директора.</div>
             </div>
           </div>
-          <div class="content__container">
-            <div class="content__col">
-              <div class="content__subheader">Подзаголовок 1</div>
-              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam odit consequuntur, quasi, quisquam dignissimos quod, odio reiciendis explicabo aut consectetur officia minima deleniti velit nisi blanditiis. Itaque vitae, animi assumenda.</div>
-              <div>Quibusdam tempore velit minus unde officia reprehenderit possimus accusamus qui blanditiis, quo. Laborum recusandae odit quidem nam, iste, nobis officia. Sunt nemo illo deleniti, cupiditate, dolore quod possimus voluptas. Labore.</div>
-              <div>Voluptate harum tempora architecto laboriosam quo, maiores deserunt quas, saepe velit eius quam ducimus accusantium repellendus porro quod repellat incidunt repudiandae maxime asperiores provident. Quia neque pariatur ab at laborum!</div>
-            </div>
-            <div class="content__col">
-              <img class="content--rounded" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=%D0%A4%D0%BE%D1%82%D0%BE&w=350&h=350" alt="">
-            </div>
-          </div>
-          <div class="content__container content__container_border">
-            <div class="content__col">
-              <div class="content__subheader">Подзаголовок 2</div>
-              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem eligendi voluptatem laudantium eaque culpa, tempora assumenda, quos dolor, eius molestias alias voluptates! Consectetur itaque esse tempora minus ullam sit.</div>
-              <div>Sit aspernatur mollitia commodi omnis magnam aperiam, ab explicabo odit et perspiciatis cupiditate harum architecto, in, iusto delectus, expedita nesciunt molestias dolor! Praesentium quia impedit laboriosam unde, iure corporis? Aliquam.</div>
-            </div>
-            <div class="content__col">
-              <div class="content__subheader">Подзаголовок 3</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sed minus corporis vel quae, sequi molestiae perferendis ex eveniet laudantium sapiente, optio distinctio doloribus tempore itaque accusamus laboriosam tempora quibusdam.</p>
-              <p><a href="#">Ссылка</a></p>
-            </div>
-          </div>
+          <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script><style>.YMaps {position: relative;} .YMaps .author_link {position: absolute;bottom: 9px; right:330px; z-index: 999;padding:0;display: table!important;line-height:12px;text-decoration:underline!important;white-space: nowrap!important;font-family: Verdana,serif!important;font-size: 10px!important;padding-left: 2px!important;color: #000!important;background-color: rgba(255, 255, 255, 0.7)!important;border:none;}</style>
+          <div id="YMaps_0" class="YMaps" style="width:100%;height:400px"><a class="author_link" target="_blank" href="http://oiplug.com/">OYM</a></div>
+          <script type="text/javascript">
+            ymaps.ready(init);
+
+            function init () {
+              var myMap = new ymaps.Map("YMaps_0", {
+                  center: [59.987756,30.313927],
+                  zoom: 16
+                });
+                
+                myMap.controls.add("zoomControl").add("typeSelector").add("mapTools").add("trafficControl").add("routeEditor");
+
+          
+                
+              myPlacemark_1 = new ymaps.Placemark([59.986848,30.318231], {balloonContentHeader: "ООО “Петербургский геральдический завод”",},
+              {preset: "twirl#blueDotIcon"}
+              );
+              myMap.geoObjects.add(myPlacemark_1);
+        
+        
+            }
+          </script>
+          <p style="text-align: center;"><strong>Общество с ограниченной ответственностью “Петербургский геральдический завод”</strong></p>
+          <h2 style="text-align: center;">Реквизиты</h2>
+          <p>
+            Сокращенное наименование предприятия: Петербургский геральдический завод
+          </p>
+          <p>
+            Генеральный директор: Аксенов Владислав Анатольевич
+          </p>
+          <p>
+            ИНН: 7814644222
+          </p>
+          <p>
+            КПП: 781401001
+          </p>
+          <p>
+            ОГРН: 1167847137490
+          </p>
+          <p>
+            БИК: 044030653
+          </p>
+          <p>
+            Юридический адрес: 197342 г. Санкт-Петербург, ул. Белоостровская 20, литер Б, помещение 4- Н, оф. 11
+          </p>
+          <p>
+            Телефон (факс): 8 (812) 244-27-06
+          </p>
+          <p>
+            Номер расчетного счета: 40702810455040014470
+          </p>
+          <p>
+            Наименование учреждения банка: Северо-западный банк ПАО Сбербанк
+          </p>
+          <p>
+            Местонахождение учреждения банка: г. Санкт-Петербург
+          </p>
+          <p>
+            Корреспондентский счет банка: 30101810500000000653
+          </p>
+          <p>
+            Email: <a href="mailto:info@geraldzavod.ru">info@geraldzavod.ru</a>
+          </p>
         </div>
       </main>
     </div>

@@ -182,6 +182,21 @@
       }
     }
   }
+  &__col3x {
+    flex: 1;
+    max-width: 33.33%;
+    padding: 0 2rem;
+    p {
+      text-align: center;
+    }
+    .content__center {
+      margin-bottom: 1rem;
+    }
+  }
+  &__center {
+    text-align: center;
+
+ }
   &--rounded {
     overflow: hidden;
     border-radius: 50%;
@@ -256,4 +271,8 @@ a.img {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.contacts__container {
+  margin: 2rem 0;
 }

@@ -7,6 +7,24 @@ $(function () {
 
   sliders();
   forms();
+
+  $('a:not(.benefits__item, .gallery-item) img').parent().addClass('img');
+
+  $('.gallery').each(function () {
+    $(this).magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery:{
+        enabled:true
+      },
+      removalDelay: 500,
+      mainClass: 'mfp-zoom-in modal',
+      callbacks: {
+        beforeOpen: function() {}
+      },
+      midClick: true
+    });
+  });
 });
 
 var sliders = function() {
