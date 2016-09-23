@@ -2,7 +2,7 @@
   &__container {
     -js-display: flex;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
   &__col {
     padding: 1rem;
@@ -12,5 +12,33 @@
   }
   &__button {
     text-align: center;
+  }
+  &__image {
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  .on-page {
+    min-width: 20rem;
+    margin-left: 2rem;
+    padding-left: 0.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dotted #ccc;
+    border-left: 1px dotted #ccc;
+    border-radius: 0 0 0 10px;
+    .wpcf7-good {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+    .wpcf7-validation-errors {
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 40rem) {
+    .on-page {
+      display: none;
+    }
   }
 }

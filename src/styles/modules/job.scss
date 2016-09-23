@@ -1,0 +1,87 @@
+.job {
+  &__container {
+    -js-display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  &__item {
+    flex-basis: 25%;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 0 0.5rem;
+    height: 229px;
+    &:before {
+      content: '';
+      display: block;
+      z-index: -1;
+      background: url('../images/job/line-dashed.png') center center repeat-x;
+      position: absolute;
+      height: 2px;
+      top: 30px;
+    }
+    &:after {
+      content: '';
+      display: block;
+      z-index: -1;
+      position: absolute;
+      top: 30px;
+    }
+    &_2, &_3, &_5, &_6, &_7 {
+      &:before {
+        width: 100%;
+        height: 2px;
+        right: 0;
+        top: 30px;
+        left: auto;
+      }
+    }
+    &_1 {
+      &:before {
+        width: 50%;
+        height: 2px;
+        right: 0;
+        top: 30px;
+        left: auto;
+      }
+    }
+
+    &_4 {
+      &:before {
+        width: 50%;
+        height: 2px;
+        left: 0;
+        top: 30px;
+        right: auto;
+      }
+    }
+
+    &_8 {
+      &:before {
+        width: 50%;
+        height: 2px;
+        left: 0;
+        top: 30px;
+        right: auto;
+      }
+    }
+    &_4 {
+      &:after {
+        background: url('../images/job/line-brr-right.png') center center no-repeat;
+        height: 232px;
+        width: 100px;
+        left: 50%;
+      }
+    }
+    &_1 {
+      &:after {
+        background: url('../images/job/line-brr-left.png') center center no-repeat;
+        height: 50px;
+        width: 60px;
+        right: 80%;
+        top: -20px;
+      }
+    }
+  }
+}

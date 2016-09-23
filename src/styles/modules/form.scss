@@ -150,7 +150,7 @@ $mColor: #d7ae4e;
 .form.modal {
   display: none;
 }
-.modal form {
+.modal form, .on-page form {
   background-color: #fff;
   max-width: 400px;
   margin: 0 auto;

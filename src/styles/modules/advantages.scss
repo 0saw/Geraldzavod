@@ -1,0 +1,104 @@
+.advantages {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  &__container {
+    -js-display: flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  &__item {
+    flex-basis: 50%;
+    -js-display: flex;
+    display: flex;
+    align-items: center;
+    margin: 0 0 1rem;
+    justify-content: center;
+  }
+  &__image {
+    margin-right: 1rem;
+    position: relative;
+    padding: 1rem;
+    background-color: rgba(255,255,255,0);
+    border-radius: 50%;
+    border: 2px solid #b08d3d;
+    overflow: hidden;
+    min-width: 6.25rem;
+    transition: background-color 0.3s ease-out;
+    transition-timing-function: $mTrans;
+    &:before {
+      content: '';
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      right: -1px;
+      bottom: -1px;
+      margin: auto;
+      border-radius: 50%;
+      background-color: #b08d3d;
+      transform: translateZ(0) scale(0.5, 0.5);
+      backface-visibility: hidden;
+      opacity: 0.001;
+      transition: 0.3s ease-out;
+      transition-property: transform, opacity;
+      transition-timing-function: $mTrans;
+    }
+    img {
+      display: block;
+      transition: opacity 0.3s ease-out;
+      transition-timing-function: $mTrans;
+    }
+    img:last-child {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      opacity: 0.001;
+    }
+    &:hover {
+      background-color: #b08d3d;
+      &:before {
+        opacity: 1;
+        transform: translateZ(0) scale(1, 1);
+        transition-timing-function: $mTrans;
+        transition-duration: 0.1s;
+      }
+      img {
+        opacity: 0.001;
+        transition-timing-function: $mTransOut;
+        &:last-child {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 60rem) {
+    width: 100%;
+    &__item {
+      flex-basis: 50%;
+    }
+  }
+  @media screen and (max-width: 40rem) {
+    width: 100%;
+    &__container {
+    }
+    &__item {
+      justify-content: flex-start;
+      flex-basis: 80%;
+      br {
+        display: none;
+      }
+    }
+  }
+  @media screen and (max-width: 30rem) {
+    &__container {
+    }
+    &__item {
+      justify-content: flex-start;
+      flex-basis: 100%;
+    }
+  }
+}

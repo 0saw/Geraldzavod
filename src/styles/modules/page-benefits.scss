@@ -1,0 +1,77 @@
+.page-benefits {
+  padding-top: 2rem;
+  h2 {
+    text-align: center;
+  }
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+    transition: all 0.3s ease-out;
+  }
+
+  &__item {
+    -js-display: flex;
+    display: flex;
+    align-items: center;
+    margin: 0 0 1rem;
+    padding: 1rem;
+    justify-content: space-between;
+    width: 100%;
+    &:nth-child(even) {
+      background-color: rgba(0,0,0,0.02);
+      border: 1px dotted #ccc;
+    }
+  }
+  &__col {
+    flex: 1 0 auto;
+    max-width: 50%;
+    transition: all 0.3s ease-out;
+    ul {
+      list-style-image: url('../images/checked.png');
+      margin: 0;
+      li {
+        margin: 0.5rem 0;
+      }
+    }
+    &_left {
+      padding-right: 2rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    &_right {
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 10%;
+        bottom: 10%;
+        margin: auto 0;
+        left: 0;
+        width: 0px;
+        border-right: 1px dotted #ccc;
+      }
+    }
+  }
+  @media screen and (max-width: 60rem) {
+    &__item {
+      flex-flow: row wrap;
+    }
+    &__col {
+      max-width: 100%;
+      width: 100%;
+      &_left {
+        margin-bottom: 0.5rem;
+      }
+      &_right {
+        &:after {
+          border: none;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 40rem) {
+    &__container {
+      width: 100%;
+    }
+  }
+}

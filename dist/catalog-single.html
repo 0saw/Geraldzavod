@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Geraldzavod</title>
 
-  <link rel="stylesheet" href="styles/main.min.css">
+  <link rel="stylesheet" href="styles/main.css">
   <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
@@ -123,42 +123,85 @@
             <h1>Нагрудные знаки 1</h1>
           </header>
           <div class="catalog-single__container">
-            <div class="catalog-single__col">
-              <img src="images/catalog/cat1.png" alt="" />
+            <div class="catalog-single__text">
+              <div class="catalog-single__image">
+                <img src="images/catalog-single.jpg" alt="" />
+              </div>
+              <div class="catalog-single__info">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, maiores, ullam! Ut dolorem velit adipisci labore soluta natus fugiat autem, perspiciatis. Optio veniam iure sunt hic fugit illum enim facilis.</p>
+                <p>Id eum ea eos atque consectetur. Facere ipsum quaerat, quisquam iste voluptates, recusandae libero quis illum fugiat, qui inventore iusto eligendi! Qui debitis dolorem commodi iure modi cumque aut laborum!</p>
+              </div>
+              <div class="catalog-single__desc">
+                <table>
+                  <tr>
+                    <td>Технология</td>
+                    <td>3д штамповка</td>
+                  </tr>
+                  <tr>
+                    <td>Размер</td>
+                    <td>30х45мм</td>
+                  </tr>
+                  <tr>
+                    <td>Материал</td>
+                    <td>цинковый сплав</td>
+                  </tr>
+                  <tr>
+                    <td>Гальваническое покрытие</td>
+                    <td>двойное. Никель и медь</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Холодная эмаль 5 цветов.</td>
+                  </tr>
+                  <tr>
+                    <td>Крепление</td>
+                    <td>цанга</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="catalog-single__button">
+                <a href="#" class="button button_product">Заказать</a>
+              </div>
             </div>
-            <div class="catalog-single__col">
-              <table>
-                <tr>
-                  <td>Технология</td>
-                  <td>3д штамповка</td>
-                </tr>
-                <tr>
-                  <td>Размер</td>
-                  <td>30х45мм</td>
-                </tr>
-                <tr>
-                  <td>Материал</td>
-                  <td>цинковый сплав</td>
-                </tr>
-                <tr>
-                  <td>Гальваническое покрытие</td>
-                  <td>двойное. Никель и медь</td>
-                </tr>
-                <tr>
-                  <td colspan="2">Холодная эмаль 5 цветов.</td>
-                </tr>
-                <tr>
-                  <td>Крепление</td>
-                  <td>цанга</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="catalog-single__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, maiores, ullam! Ut dolorem velit adipisci labore soluta natus fugiat autem, perspiciatis. Optio veniam iure sunt hic fugit illum enim facilis.</p>
-            <p>Id eum ea eos atque consectetur. Facere ipsum quaerat, quisquam iste voluptates, recusandae libero quis illum fugiat, qui inventore iusto eligendi! Qui debitis dolorem commodi iure modi cumque aut laborum!</p>
-            <div class="catalog-single__button">
-              <a href="#" class="button button_product">Заказать</a>
+            <div class="on-page">
+              <div class="form">
+                <form>
+                  <header>
+                      <div class="h1">Оставить заявку на расчет</div>
+                  </header>
+                  <div class="form__row cf">
+                      <div class="form__field">
+                          <span>
+                              <input id="name-field" name="name" type="text" />
+                          </span>
+                          <label for="name-field">Ваше имя</label>
+                      </div>
+                      <div class="form__field">
+                          <span>
+                              <input id="phone-field" name="phone" type="text" />
+                          </span>
+                          <label for="phone-field">Номер телефона</label>
+                      </div>
+                      <div class="form__field">
+                          <span>
+                              <input name="message" id="message-field" type="text" />
+                          </span>
+                          <label for="message-field">Примечание</label>
+                      </div>
+                  </div>
+                  <div class="form__right">
+                      <a href="#" class="button">Отставить заявку</a>
+                      <input type="submit" value="Отправить">
+                      <img class="ajax-loader" src="images/ajax-loader2.gif" alt="Отправка..." style="visibility: hidden;">
+                  </div>
+                  <div class="wpcf7-response-output wpcf7-display-none wpcf7-validation-errors" style="display: none;" role="alert">
+                      Одно или несколько полей содержат ошибочные данные. Пожалуйста проверьте их и попробуйте ещё раз.
+                  </div>
+                  <div class="wpcf7-good" style="display: none;" role="alert">
+                      Ваше сообщение успешно отправлено.
+                  </div>
+                </form>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -230,8 +273,8 @@
     
   </div>
 
-  <script src="scripts/vendor.min.js"></script>
-  <script src="scripts/main.min.js"></script>
+  <script src="scripts/vendor.js"></script>
+  <script src="scripts/main.js"></script>
 
   <!-- //@include inc/_analytics.html -->
 </body>
