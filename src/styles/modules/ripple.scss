@@ -1,51 +1,61 @@
 .content .button, .button {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 22px;
-    font-size: 1.4rem;
-    text-decoration: none;
-    color: $bgColor;
-    overflow: hidden;
-    background-color: mix($textColor, $bgColor);
-    border-radius: 4px;
-    transition: 0.3s ease-out;
-    transition-property: opacity, transform, background-color, box-shadow;
-    &:hover {
-        background-color: lighten(mix($textColor, $bgColor), 10%);
-        color: $white;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.25);
-        transition-duration: 0.1s;
-    }
-    &:active {
-        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-    &:after {
-      content: none;
-      display: none;
-    }
-    &_footer {
-        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-        background-color: mix($bgColor, #fff);
-        color: $mColor;
-        &:hover {
-            color: $mColor;
-            background-color: #fff;
-        }
-    }
-    &_catalog, &_product, &_news {
-      text-align: center;
-      background-color: $mColor;
-      font-size: 19.2px;
-      font-size: 1.2rem;
-      padding: 7px 10px;
-      width: 50%;
-      max-width: 200px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 22px;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: $bgColor;
+  overflow: hidden;
+  background-color: mix($textColor, $bgColor);
+  border-radius: 4px;
+  transition: 0.3s ease-out;
+  transition-property: opacity, transform, background-color, box-shadow;
+  &:hover {
+      background-color: lighten(mix($textColor, $bgColor), 10%);
+      color: $white;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+      transition-duration: 0.1s;
+  }
+  &:active {
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  &:after {
+    content: none;
+    display: none;
+  }
+  &_footer {
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+      background-color: mix($bgColor, #fff);
+      color: $mColor;
       &:hover {
-        background-color: saturate($mColor, 10%);
-        color: #fff;
+          color: $mColor;
+          background-color: #fff;
       }
+  }
+  &_catalog, &_product, &_news {
+    text-align: center;
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    padding: 7px 10px;
+    width: 50%;
+    max-width: 200px;
+    background-color: $mColor;
+    &:hover {
+      background-color: saturate($mColor, 10%);
+      color: #fff;
     }
+  }
+  &_job {
+    padding: 0.6rem 0.8rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    background-color: $mColor;
+    &:hover {
+      background-color: saturate($mColor, 10%);
+      color: #fff;
+    }
+  }
 }
 
 .ink {
