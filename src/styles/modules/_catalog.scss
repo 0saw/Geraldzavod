@@ -14,7 +14,7 @@
     text-decoration: none;
     color: $textColor;
     border: 1px dotted #ccc;
-    width: 33.33%;
+    flex-basis: 33.33%;
     border-width: 0 1px 1px 0;
     &:nth-child(3n) {
       border-right-color: rgba(0,0,0,0);
@@ -61,7 +61,40 @@
     text-align: center;
     width: 100%;
   }
+  &__image {
+    padding: 0 4rem;
+    height: 153px;
+    img {
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      max-height: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
   &__title {
     font-size: 1.4rem;
+  }
+  @media screen and (max-width: 60rem) {
+    &__item {
+      flex-basis: 50%;
+      border-width: 0 1px 1px 0;
+      &:nth-child(n) {
+        border-right-color: #ccc;
+      }
+      &:nth-child(2n) {
+        border-right-color: rgba(0,0,0,0);
+      }
+    }
+  }
+  @media screen and (max-width: 30rem) {
+    &__item {
+      flex-basis: 100%;
+      border-width: 0 1px 1px 0;
+      &:nth-child(n) {
+        border-right-color: rgba(0,0,0,0);
+      }
+    }
   }
 }
