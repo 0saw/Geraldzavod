@@ -15,18 +15,15 @@
     color: $textColor;
     border: 1px dotted #ccc;
     flex-basis: 33.33%;
+    max-width: 33.33%;
     border-width: 0 1px 1px 0;
     &:nth-child(3n) {
       border-right-color: rgba(0,0,0,0);
     }
-  }
-  &__item-container {
     position: relative;
+    display: block;
     padding: 2rem 1.8rem;
-    -js-display: flex;
-    display: flex;
-    align-items: center;
-    flex-flow: row wrap;
+    
     transition: 0.3s ease-out;
     transition-property: color, background-color;
     transition-timing-function: $mTrans;
@@ -57,6 +54,9 @@
       }
     }
   }
+  &__item-container {
+    
+  }
   &__title, &__image {
     text-align: center;
     width: 100%;
@@ -79,6 +79,7 @@
   @media screen and (max-width: 60rem) {
     &__item {
       flex-basis: 50%;
+      max-width: 50%;
       border-width: 0 1px 1px 0;
       &:nth-child(n) {
         border-right-color: #ccc;
@@ -88,9 +89,10 @@
       }
     }
   }
-  @media screen and (max-width: 30rem) {
+  @media screen and (max-width: 40rem) {
     &__item {
       flex-basis: 100%;
+      max-width: 100%;
       border-width: 0 1px 1px 0;
       &:nth-child(n) {
         border-right-color: rgba(0,0,0,0);
