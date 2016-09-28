@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Geraldzavod</title>
+
+  <!-- @if ENV='dev' -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- @endif -->
+  <!-- @if ENV='prod' -->
+  <link rel="stylesheet" href="styles/main.min.css">
+  <!-- @endif -->
+  <!-- @include inc/_favicons.html -->
+</head>
+<body>
+  <!-- @include inc/pushy.html -->
+  
+  <div class="viewport" id="container">
+    <div class="site-content">
+      <!-- @include inc/_browserhappy.html -->
+      <!-- @include inc/header.html --> 
+
+      <main class="catalog">
+        <div class="wrapper">
+          <div class="content">
+            <div class="content__container content__container_top">
+              <div class="content__col3x">
+                <div class="content__center">
+                  <a href="catalog-single.html"><img src="images/catalog/cat3.png" alt=""></a>
+                </div>
+                <div class="content__subheader content__center">Значки</div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, iste officiis libero eum dolore, molestias facilis illo neque ipsum obcaecati nesciunt! Reprehenderit nostrum praesentium deleniti, modi necessitatibus assumenda aliquid architecto.</div>
+              </div>
+              <div class="content__col3x">
+                <div class="content__center">
+                  <a href="catalog-single.html"><img src="images/catalog/cat13.png" alt=""></a>
+                </div>
+                <div class="content__subheader content__center">Монеты</div>
+                <div>Nesciunt, sequi praesentium magnam! Dolores, asperiores animi. Veritatis dolores pariatur vero ab asperiores ullam similique aspernatur, fugiat odit illo in, ipsum sed, officiis sint. Quidem inventore iste, id velit voluptatem!</div>
+              </div>
+              <div class="content__col3x">
+                <div class="content__center">
+                  <a href="catalog-single.html"><img src="images/catalog/cat12.png" alt=""></a>
+                </div>
+                <div class="content__subheader content__center">Прочее</div>
+                <div>Reiciendis magnam veniam iste reprehenderit, quidem omnis minima. Et voluptatem laboriosam animi inventore eligendi officiis laudantium sed delectus perspiciatis natus doloribus nihil quisquam, sint molestiae aspernatur.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- @include inc/footer.html -->
+  </div>
+
+  <!-- @if ENV='dev' -->
+  <script src="scripts/vendor.js"></script>
+  <script src="scripts/main.js"></script>
+  <!-- @endif -->
+  <!-- @if ENV='prod' -->
+  <script src="scripts/vendor.min.js"></script>
+  <script src="scripts/main.min.js"></script>
+  <!-- @endif -->
+
+  <!-- //@include inc/_analytics.html -->
+</body>
+</html>

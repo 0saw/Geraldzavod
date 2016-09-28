@@ -17,6 +17,12 @@
     padding: 0 3rem;
     justify-content: flex-start;
   }
+  &__form {
+    padding: 2rem 0 3rem;
+    .form__right {
+      text-align: center;
+    }
+  }
   &__image {
     margin-right: 1rem;
     position: relative;

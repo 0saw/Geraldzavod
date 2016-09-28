@@ -58,7 +58,7 @@
       }
     }
 
-    &_4 {
+    &_8 {
       padding-right: 2.5rem;
       &:before {
         width: 50%;
@@ -69,7 +69,8 @@
       }
     }
 
-    &_8 {
+    &_4 {
+      padding-right: 2.5rem;
       &:before {
         width: 50%;
         height: 2px;
@@ -115,7 +116,7 @@
         background-image: url('../images/job/file.png');
       }
     }
-    &_4 {
+    &_7 {
       .job__icon {
         background-image: url('../images/job/handshake.png');
       }
@@ -130,12 +131,12 @@
         background-image: url('../images/job/settings.png');
       }
     }
-    &_7 {
+    &_8 {
       .job__icon {
         background-image: url('../images/job/medal.png');
       }
     }
-    &_8 {
+    &_4 {
       .job__icon {
         background-image: url('../images/job/graphic.png');
       }
